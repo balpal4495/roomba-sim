@@ -1,0 +1,14 @@
+{
+  "name": "roomba-sim",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/balpal4495/roomba-sim.git",
+  "author": "baljit4495@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
