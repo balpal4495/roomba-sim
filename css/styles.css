@@ -1,4 +1,5 @@
 #table {
+    /*rotated table to move coordinates to bottom left*/
     transform:rotate(-90deg);
     margin-top: 5rem;
     margin: 0px auto;
