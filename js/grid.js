@@ -69,7 +69,6 @@ const cleanTile = () => {
 }
 
 const printHooverPosition = (hoover) => {
-    console.log('hoover::', hoover);
     $('#xPos').text(hoover.x);
     $('#yPos').text(hoover.y);
 }
