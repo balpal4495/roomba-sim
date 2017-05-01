@@ -11,7 +11,7 @@
   </head>
   <body>
     <h1>Table View</h1>
-    <div> <input type="number" id="rowsInput" name="rowsInput"/> <input type="number" id="columnsInput"/> </div>
+    <div> <input type="number" id="rowsInput" name="rowsInput" min="1"/> <input type="number" id="columnsInput" min="1"/> </div>
     <div><button id="tableGenerate"><a href="#">Generate </a></button></div>
     <div id="hooverPosition"> 
         <p>Hoover Position</p>
@@ -21,7 +21,7 @@
     <div id="dirtyCounter"> 
         <p>Dirty Tiles Left:  <span id="dirtyCount"></span></p> 
     </div>
-    
+
     <table id="table" border="1" tabindex="1"></table>
     <script type="text/javascript" src="js/utils.js"></script>
     <script type="text/javascript" src="js/tableGenerate.js"></script>
