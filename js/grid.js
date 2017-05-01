@@ -58,6 +58,8 @@ const reCalculate = (e) => {
     if (e.keyCode == 40) { // move down
         active = (active+columns<=(rows*columns)-1)?active+columns:active;
     }
+    let dirtyClasses = $('#table .dirty').length;
+    dirtyCount(dirtyClasses);
 }
 
 const cleanTile = () => {
@@ -71,4 +73,8 @@ const cleanTile = () => {
 const printHooverPosition = (hoover) => {
     $('#xPos').text(hoover.x);
     $('#yPos').text(hoover.y);
+}
+
+const dirtyCount = (dirty) => {
+    console.log('dirty::', dirty);
 }
