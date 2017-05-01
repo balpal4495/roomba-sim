@@ -76,5 +76,5 @@ const printHooverPosition = (hoover) => {
 }
 
 const dirtyCount = (dirty) => {
-    console.log('dirty::', dirty);
+     $('#dirtyCount').text(dirty);
 }
