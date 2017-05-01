@@ -12,6 +12,8 @@ let currCell = $('td').first();
    cleanTile();
 });
 
+
+// controls work differently as they natrually would because table has been rotated
 $('#table').keydown(function (e) {
     let c = "";
     if (e.which == 39) {
