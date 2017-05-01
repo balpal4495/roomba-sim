@@ -1,5 +1,6 @@
 $(document).keydown(function(e){
     reCalculate(e);
+    cleanTile();
     return false;
 });
 
@@ -7,7 +8,8 @@ let currCell = $('td').first();
  $(currCell).focus();
  $('td').click(function(){
    active = $(this).closest('table').find('td').index(this);
-   currCell = $(this);   
+   currCell = $(this);
+   cleanTile();
 });
 
 $('#table').keydown(function (e) {
@@ -50,4 +52,12 @@ const reCalculate = (e) => {
     if (e.keyCode == 40) { // move down
         active = (active+columns<=(rows*columns)-1)?active+columns:active;
     }
+}
+
+const cleanTile = () => {
+  let currentCell = currCell[0];
+  if ( $(currentCell).hasClass('dirty')) {
+    $(currentCell).removeClass('dirty');
+  };
+  $(currentCell).addClass('clean');
 }
