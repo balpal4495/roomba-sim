@@ -37,6 +37,10 @@ $('#table').keydown(function (e) {
         currCell = c;
         currCell.focus();
     }
+    let hooverPosition = {x: 0, y: 0};
+    hooverPosition.x = c[0].cellIndex; 
+    hooverPosition.y = c[0].parentNode.rowIndex; 
+    printHooverPosition(hooverPosition);
 });
 
 const reCalculate = (e) => {
@@ -62,4 +66,8 @@ const cleanTile = () => {
     $(currentCell).removeClass('dirty');
   };
   $(currentCell).addClass('clean');
+}
+
+const printHooverPosition = (hoover) => {
+    console.log('hoover::', hoover);
 }
