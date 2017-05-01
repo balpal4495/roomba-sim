@@ -5,6 +5,11 @@ $(document).keydown(function(e){
 
 let currCell = $('td').first();
  $(currCell).focus();
+ $('td').click(function(){
+   active = $(this).closest('table').find('td').index(this);
+   currCell = $(this);   
+});
+
 $('#table').keydown(function (e) {
     let c = "";
     if (e.which == 39) {
