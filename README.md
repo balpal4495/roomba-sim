@@ -1,6 +1,8 @@
 # roomba-sim
 HTML based Roomba simulator
 
+please ensure node is installed, ideally v7.9.0
+
 install dependencies
 ```
 npm install
